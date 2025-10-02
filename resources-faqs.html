@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources & FAQs - Homemade Happiness</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .essentials-table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #cc9999;
+            margin: 20px 0;
+            table-layout: fixed;
+        }
+        
+        .essentials-table th,
+        .essentials-table td {
+            border: 1px solid #996666;
+            padding: 12px 15px;
+            text-align: left;
+            vertical-align: top;
+            width: 33.33%;
+            word-wrap: break-word;
+            white-space: normal;
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+        
+        .essentials-table th {
+            background-color: #cc9999;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .essentials-table tbody tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .essentials-table tbody tr:hover {
+            background-color: #FFE4B5;
+        }
+        
+        /* Ensure all tables in guide cards match the pantry table width */
+        .guide-card .essentials-table,
+        .substitution-card .essentials-table,
+        .faq-category .essentials-table {
+            width: 100%;
+            max-width: 100%;
+            table-layout: fixed;
+        }
+        
+        .guide-card,
+        .substitution-card,
+        .faq-category {
+            width: 100%;
+        }
+        
+        .pantry-table-container,
+        .temp-guide,
+        .conversion-guide,
+        .timing-guide {
+            width: 100%;
+        }
+        
+        /* Center FAQ Section */
+        .faq-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .faq-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .faq-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .faq-category {
+            width: 100%;
+            max-width: 100%;
+        }
+        
+        .faq-category h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        /* Ensure FAQ tables match pantry table width */
+        .faq-category .essentials-table {
+            width: 100%;
+            max-width: 100%;
+            table-layout: fixed;
+        }
+        
+        .faq-category .essentials-table th,
+        .faq-category .essentials-table td {
+            width: 50%;
+        }
+        
+        /* Ensure consistent row heights across all tables */
+        .essentials-table td {
+            min-height: 60px;
+            height: auto;
+        }
+        
+        .essentials-table th {
+            min-height: 50px;
+            height: auto;
+        }
+        
+        /* Make guide grid tables full width like resource tables */
+        .guide-grid {
+            display: block;
+            width: 100%;
+        }
+        
+        .guide-grid .guide-card {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Header with Site Name/Logo and Search Engine -->
+        <header>
+            <div class="header-content">
+                <!-- Site Name/Logo Area -->
+                <div class="logo-area">
+                    <h1><a href="index.html">Homemade Happiness</a></h1>
+                    <p class="tagline">Where Every Meal is Made with Love</p>
+                </div>
+                
+                <!-- Search Engine at Top Right -->
+                <div class="search-area">
+                    <form class="search-form" action="#" method="get">
+                        <input type="text" name="search" placeholder="Search recipes, tips, ingredients..." class="search-input" required>
+                        <button type="submit" class="search-btn" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes-mop.html">Recipes/MOP</a></li>
+                <li><a href="resources-faqs.html" class="active">Resources/FAQs</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Resources Section -->
+            <section class="resources-section">
+                <h2>Essential Cooking Resources</h2>
+                
+                <!-- Kitchen Essentials -->
+                <div class="resource-category">
+                    <h3><i class="fas fa-utensils"></i> Kitchen Essentials</h3>
+                    <div class="kitchen-essentials-table">
+                        <table class="essentials-table">
+                            <thead>
+                                <tr>
+                                    <th>Kitchen Tool</th>
+                                    <th>Description</th>
+                                    <th>Primary Use</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Chef's Knife</td>
+                                    <td>8-10 inch high-quality knife for all cutting tasks</td>
+                                    <td>Chopping, dicing, slicing vegetables, meat, and herbs</td>
+                                </tr>
+                                <tr>
+                                    <td>Cutting Boards</td>
+                                    <td>Separate boards for meat and vegetables</td>
+                                    <td>Food safety and preparation surface</td>
+                                </tr>
+                                <tr>
+                                    <td>Mixing Bowls</td>
+                                    <td>Set of various sizes for prep and mixing</td>
+                                    <td>Combining ingredients, marinating, serving</td>
+                                </tr>
+                                <tr>
+                                    <td>Measuring Cups & Spoons</td>
+                                    <td>Both dry and liquid measuring tools</td>
+                                    <td>Accurate ingredient measurement for recipes</td>
+                                </tr>
+                                <tr>
+                                    <td>Cast Iron Skillet</td>
+                                    <td>Versatile pan for searing, baking, and frying</td>
+                                    <td>High-heat cooking, oven-to-stovetop versatility</td>
+                                </tr>
+                                <tr>
+                                    <td>Stock Pot</td>
+                                    <td>Large pot for soups, pasta, and batch cooking</td>
+                                    <td>Boiling pasta, making stocks, large batch meals</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                        <div class="resource-card">
+                            <div class="resource-content">
+                                <h4>Pantry Staples Checklist</h4>
+                                <div class="pantry-table-container">
+                                    <table class="essentials-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Category</th>
+                                                <th>Essential Items</th>
+                                                <th>Uses & Applications</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Oils & Vinegars</strong></td>
+                                                <td>Extra virgin olive oil, Vegetable/canola oil, Balsamic vinegar, Apple cider vinegar</td>
+                                                <td>Cooking, salad dressings, marinades, flavor enhancement</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Spices & Seasonings</strong></td>
+                                                <td>Salt (kosher and sea), Black pepper, Garlic powder, Paprika, Italian seasoning</td>
+                                                <td>Flavoring dishes, seasoning meats, enhancing vegetables</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Baking Basics</strong></td>
+                                                <td>All-purpose flour, Sugar (white and brown), Baking powder & soda, Vanilla extract</td>
+                                                <td>Baking breads, cakes, cookies, and desserts</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Canned Goods</strong></td>
+                                                <td>Diced tomatoes, Chicken/vegetable broth, Beans, Coconut milk</td>
+                                                <td>Base for soups, stews, sauces, and quick meals</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Grains & Pasta</strong></td>
+                                                <td>Rice (white/brown), Pasta varieties, Quinoa, Oats</td>
+                                                <td>Side dishes, main courses, breakfast options</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Condiments</strong></td>
+                                                <td>Soy sauce, Hot sauce, Mustard, Honey, Lemon juice</td>
+                                                <td>Flavor enhancement, marinades, glazes, dressings</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cooking Guides -->
+                <div class="resource-category">
+                    <h3><i class="fas fa-book"></i> Cooking Guides & References</h3>
+                    <div class="guide-grid">
+                        <div class="guide-card">
+                            <h4><i class="fas fa-thermometer-half"></i> Temperature Guide</h4>
+                            <div class="temp-guide">
+                                <h5>Meat Internal Temperatures:</h5>
+                                <table class="essentials-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Meat Type</th>
+                                            <th>Temperature (°F)</th>
+                                            <th>Temperature (°C)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Chicken</td>
+                                            <td>165°F</td>
+                                            <td>74°C</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ground beef</td>
+                                            <td>160°F</td>
+                                            <td>71°C</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Beef steaks (medium-rare)</td>
+                                            <td>145°F</td>
+                                            <td>63°C</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pork</td>
+                                            <td>145°F</td>
+                                            <td>63°C</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fish</td>
+                                            <td>145°F</td>
+                                            <td>63°C</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <h5>Cooking Temperatures:</h5>
+                                <table class="essentials-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Cooking Method</th>
+                                            <th>Temperature (°F)</th>
+                                            <th>Temperature (°C)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Simmering</td>
+                                            <td>185-200°F</td>
+                                            <td>85-93°C</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Boiling</td>
+                                            <td>212°F</td>
+                                            <td>100°C</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Deep frying</td>
+                                            <td>350-375°F</td>
+                                            <td>175-190°C</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Candy making</td>
+                                            <td>300-320°F</td>
+                                            <td>150-160°C</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="guide-card">
+                            <h4><i class="fas fa-balance-scale"></i> Measurement Conversions</h4>
+                            <div class="conversion-guide">
+                                <h5>Volume Conversions:</h5>
+                                <table class="essentials-table">
+                                    <thead>
+                                        <tr>
+                                            <th>From</th>
+                                            <th>Equals</th>
+                                            <th>Alternative</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1 cup</td>
+                                            <td>16 tablespoons</td>
+                                            <td>48 teaspoons</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1 tablespoon</td>
+                                            <td>3 teaspoons</td>
+                                            <td>0.5 fluid ounces</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1 cup</td>
+                                            <td>8 fluid ounces</td>
+                                            <td>240 milliliters</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1 pint</td>
+                                            <td>2 cups</td>
+                                            <td>16 fluid ounces</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1 quart</td>
+                                            <td>4 cups</td>
+                                            <td>32 fluid ounces</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1 gallon</td>
+                                            <td>16 cups</td>
+                                            <td>4 quarts</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <h5>Weight Conversions:</h5>
+                                <table class="essentials-table">
+                                    <thead>
+                                        <tr>
+                                            <th>From</th>
+                                            <th>Equals</th>
+                                            <th>Metric Equivalent</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1 pound</td>
+                                            <td>16 ounces</td>
+                                            <td>454 grams</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1 ounce</td>
+                                            <td>28 grams</td>
+                                            <td>0.028 kilograms</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1 kilogram</td>
+                                            <td>2.2 pounds</td>
+                                            <td>1000 grams</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1 cup flour</td>
+                                            <td>~4.5 ounces</td>
+                                            <td>~125 grams</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Substitutions -->
+                <div class="resource-category">
+                    <h3><i class="fas fa-exchange-alt"></i> Common Ingredient Substitutions</h3>
+                    <div class="substitution-grid">
+                        <div class="substitution-card">
+                            <h4>Baking Substitutions</h4>
+                            <table class="essentials-table">
+                                <thead>
+                                    <tr>
+                                        <th>Original Ingredient</th>
+                                        <th>Substitute</th>
+                                        <th>Notes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1 cup butter</td>
+                                        <td>3/4 cup oil or 1 cup margarine</td>
+                                        <td>Oil makes softer texture</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 egg</td>
+                                        <td>1/4 cup applesauce or 1 tbsp ground flax + 3 tbsp water</td>
+                                        <td>For binding and moisture</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 cup milk</td>
+                                        <td>1 cup almond milk or 1/2 cup evaporated milk + 1/2 cup water</td>
+                                        <td>Non-dairy or concentrated options</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 cup sugar</td>
+                                        <td>3/4 cup honey (reduce liquid by 1/4 cup)</td>
+                                        <td>Natural sweetener, adjust liquids</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="substitution-card">
+                            <h4>Cooking Substitutions</h4>
+                            <table class="essentials-table">
+                                <thead>
+                                    <tr>
+                                        <th>Original Ingredient</th>
+                                        <th>Substitute</th>
+                                        <th>Conversion Ratio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1 clove garlic</td>
+                                        <td>1/8 tsp garlic powder</td>
+                                        <td>Fresh to dried conversion</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 medium onion</td>
+                                        <td>1 tbsp onion powder</td>
+                                        <td>For convenience cooking</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 tbsp fresh herbs</td>
+                                        <td>1 tsp dried herbs</td>
+                                        <td>3:1 fresh to dried ratio</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 cup wine</td>
+                                        <td>1 cup broth + 1 tbsp vinegar</td>
+                                        <td>Alcohol-free alternative</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-container">
+                    <div class="faq-category">
+                        <h3><i class="fas fa-utensils"></i> General Cooking</h3>
+                        <table class="essentials-table">
+                            <thead>
+                                <tr>
+                                    <th>Question</th>
+                                    <th>Answer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>How do I know when my pan is hot enough?</td>
+                                    <td>For most cooking, you can test pan temperature by sprinkling a few drops of water into the pan. If they sizzle and evaporate immediately, the pan is ready. For oil, it should shimmer but not smoke. You can also test with a small piece of food - it should sizzle immediately when it hits the pan.</td>
+                                </tr>
+                                <tr>
+                                    <td>What's the difference between sautéing and stir-frying?</td>
+                                    <td>Sautéing uses medium-high heat with a small amount of fat, and food is moved occasionally. Stir-frying uses very high heat with constant movement of ingredients. Stir-frying is typically faster and uses a wok or large skillet, while sautéing can be done in any skillet.</td>
+                                </tr>
+                                <tr>
+                                    <td>How can I tell if my baked goods are done?</td>
+                                    <td>Use the toothpick test - insert a clean toothpick into the center. For cakes and muffins, it should come out clean or with just a few moist crumbs. For bread, tap the bottom - it should sound hollow. You can also check if the edges start pulling away from the pan.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="faq-category">
+                        <h3><i class="fas fa-apple-alt"></i> Ingredients & Storage</h3>
+                        <table class="essentials-table">
+                            <thead>
+                                <tr>
+                                    <th>Question</th>
+                                    <th>Answer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>How long do spices stay fresh?</td>
+                                    <td>Whole spices can last 3-4 years, ground spices 2-3 years, and dried herbs 1-3 years when stored properly in airtight containers away from light and heat. Test freshness by smelling - if the aroma is weak, it's time to replace them.</td>
+                                </tr>
+                                <tr>
+                                    <td>Should I wash mushrooms before cooking?</td>
+                                    <td>It's best to clean mushrooms with a damp paper towel or soft brush rather than washing them. Mushrooms are like sponges and absorb water, which can make them soggy when cooked. If you must rinse them, do it quickly and pat them dry immediately.</td>
+                                </tr>
+                                <tr>
+                                    <td>How do I store fresh herbs?</td>
+                                    <td>Treat most herbs like flowers - trim the stems and place in water, then cover with a plastic bag and refrigerate. Basil should be stored at room temperature. Hardy herbs like rosemary and thyme can be wrapped in damp paper towels and stored in the refrigerator.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="faq-category">
+                        <h3><i class="fas fa-fire"></i> Troubleshooting</h3>
+                        <table class="essentials-table">
+                            <thead>
+                                <tr>
+                                    <th>Question</th>
+                                    <th>Answer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>My food is burning but not cooking through. What should I do?</td>
+                                    <td>Lower the heat immediately. This usually means your pan is too hot. You can also cover the pan to trap heat and cook more evenly, or move thicker items to a cooler part of the pan. For baking, you can cover with foil and reduce oven temperature.</td>
+                                </tr>
+                                <tr>
+                                    <td>How do I fix oversalted food?</td>
+                                    <td>For soups and stews, add a potato and simmer (then remove), or add more liquid and other ingredients to dilute. For other dishes, add acid (lemon juice, vinegar), sweetness (sugar, honey), or dairy (cream, yogurt) to balance the saltiness. Prevention is key - always taste as you go!</td>
+                                </tr>
+                                <tr>
+                                    <td>My sauce is too thin. How can I thicken it?</td>
+                                    <td>Several options: 1) Simmer uncovered to reduce and concentrate, 2) Make a slurry with cornstarch and cold water, 3) Add a roux (butter and flour mixture), 4) Whisk in tomato paste for tomato-based sauces, or 5) Add cream or cheese for cream sauces.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="faq-category">
+                        <h3><i class="fas fa-seedling"></i> Healthy Cooking</h3>
+                        <table class="essentials-table">
+                            <thead>
+                                <tr>
+                                    <th>Question</th>
+                                    <th>Answer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>What are some healthy cooking methods?</td>
+                                    <td>Steaming, poaching, grilling, roasting, and stir-frying with minimal oil are all healthy methods. These preserve nutrients while adding minimal fat. Avoid deep frying and excessive butter or oil. Season with herbs, spices, citrus, and vinegar instead of salt and heavy sauces.</td>
+                                </tr>
+                                <tr>
+                                    <td>How can I reduce sodium in my cooking?</td>
+                                    <td>Use herbs, spices, garlic, ginger, citrus juice, and vinegar for flavor instead of salt. Choose low-sodium broths and canned goods. Rinse canned beans and vegetables. Cook from scratch rather than using packaged foods. Gradually reduce salt - your taste buds will adjust.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes-mop.html">Recipes/MOP</a></li>
+                        <li><a href="resources-faqs.html">Resources/FAQs</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> hello@homemadehappiness.com</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-COOK</p>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-media">
+                        <a href="https://facebook.com/homemadehappiness" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/homemadehappiness" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://pinterest.com/homemadehappiness" target="_blank" aria-label="Pinterest">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                        <a href="https://youtube.com/homemadehappiness" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Homemade Happiness. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

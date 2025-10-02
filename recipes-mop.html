@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes & Methods - Homemade Happiness</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .category-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .category-card a {
+            display: block;
+            position: relative;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .category-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .category-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(204, 153, 153, 0.8), rgba(153, 102, 102, 0.8));
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .category-card:hover .category-overlay {
+            opacity: 1;
+        }
+        
+        .category-overlay i {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: #FFE4B5;
+        }
+        
+        .category-overlay h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .category-overlay p {
+            font-size: 1em;
+            line-height: 1.4;
+            max-width: 280px;
+        }
+        
+        /* Recipe and MOP Links Styling */
+        .recipe-mop-links {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .links-container {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        
+        .link-card {
+            flex: 1;
+            max-width: 500px;
+            text-align: center;
+        }
+        
+        .link-card a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .link-card a:hover {
+            transform: translateY(-5px);
+        }
+        
+        .link-card h3 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #996666;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .link-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease;
+        }
+        
+        .link-card a:hover .link-image {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .links-container {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .link-card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Header with Site Name/Logo and Search Engine -->
+        <header>
+            <div class="header-content">
+                <!-- Site Name/Logo Area -->
+                <div class="logo-area">
+                    <h1><a href="index.html">Homemade Happiness</a></h1>
+                    <p class="tagline">Where Every Meal is Made with Love</p>
+                </div>
+                
+                <!-- Search Engine at Top Right -->
+                <div class="search-area">
+                    <form class="search-form" action="#" method="get">
+                        <input type="text" name="search" placeholder="Search recipes, tips, ingredients..." class="search-input" required>
+                        <button type="submit" class="search-btn" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes-mop.html" class="active">Recipes/MOP</a></li>
+                <li><a href="resources-faqs.html">Resources/FAQs</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Recipe and MOP Links Section -->
+            <section class="recipe-mop-links">
+                <div class="links-container">
+                    <div class="link-card">
+                        <a href="#recipes-section">
+                            <h3>Recipes</h3>
+                            <img src="recipe book.jpg" alt="Recipe Book" class="link-image">
+                        </a>
+                    </div>
+                    <div class="link-card">
+                        <a href="#mop-section">
+                            <h3>Method of Preparation/MOP</h3>
+                            <img src="recipe card.jpg" alt="Recipe Card" class="link-image">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes-mop.html">Recipes/MOP</a></li>
+                        <li><a href="resources-faqs.html">Resources/FAQs</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> hello@homemadehappiness.com</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-COOK</p>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-media">
+                        <a href="https://facebook.com/homemadehappiness" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/homemadehappiness" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://pinterest.com/homemadehappiness" target="_blank" aria-label="Pinterest">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                        <a href="https://youtube.com/homemadehappiness" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Homemade Happiness. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
