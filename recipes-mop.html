@@ -137,6 +137,197 @@
                 max-width: 100%;
             }
         }
+        
+        /* Contact Section Styles */
+        .contact-section {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+            margin-top: 40px;
+        }
+        
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .contact-section h2 {
+            text-align: center;
+            color: #996666;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-family: Georgia, serif;
+        }
+        
+        .contact-intro {
+            text-align: center;
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .contact-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #996666;
+            font-weight: bold;
+        }
+        
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+            box-sizing: border-box;
+        }
+        
+        .form-group input[type="text"]:focus,
+        .form-group input[type="email"]:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #cc9999;
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .checkbox-label {
+            display: inline-block !important;
+            margin-left: 8px;
+            font-weight: normal !important;
+            color: #666 !important;
+        }
+        
+        .form-group input[type="checkbox"] {
+            width: auto !important;
+            margin: 0;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #cc9999, #996666);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            background: linear-gradient(135deg, #996666, #993333);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(153, 102, 102, 0.3);
+        }
+        
+        .contact-info-side {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            height: fit-content;
+        }
+        
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .contact-detail:last-of-type {
+            border-bottom: none;
+            margin-bottom: 30px;
+        }
+        
+        .contact-detail i {
+            color: #cc9999;
+            font-size: 1.5em;
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+        
+        .contact-detail h4 {
+            color: #996666;
+            margin: 0 0 5px 0;
+            font-size: 1.1em;
+        }
+        
+        .contact-detail p {
+            margin: 0;
+            color: #666;
+        }
+        
+        .social-connect h4 {
+            color: #996666;
+            margin-bottom: 15px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            background: #cc9999;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: #996666;
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .contact-form,
+            .contact-info-side {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -192,6 +383,100 @@
                 </div>
             </section>
         </main>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <p class="contact-intro">Have a question, recipe suggestion, or just want to share your cooking experience? We'd love to hear from you!</p>
+                
+                <div class="contact-content">
+                    <div class="contact-form-container">
+                        <form class="contact-form" action="#" method="post">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject">
+                                    <option value="">Select a topic...</option>
+                                    <option value="recipe-question">Recipe Question</option>
+                                    <option value="recipe-suggestion">Recipe Suggestion</option>
+                                    <option value="cooking-tip">Cooking Tip to Share</option>
+                                    <option value="website-feedback">Website Feedback</option>
+                                    <option value="general">General Inquiry</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Share your thoughts, questions, or recipe ideas..." required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                                <label for="newsletter" class="checkbox-label">Subscribe to our newsletter for weekly recipes and cooking tips</label>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info-side">
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>hello@homemadehappiness.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>(555) 123-COOK</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Response Time</h4>
+                                <p>We typically respond within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-connect">
+                            <h4>Connect With Us</h4>
+                            <div class="social-links">
+                                <a href="https://facebook.com/homemadehappiness" target="_blank" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://instagram.com/homemadehappiness" target="_blank" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://pinterest.com/homemadehappiness" target="_blank" aria-label="Pinterest">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                                <a href="https://youtube.com/homemadehappiness" target="_blank" aria-label="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Footer -->
         <footer>
