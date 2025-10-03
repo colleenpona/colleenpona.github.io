@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Guides & References - Homemade Happiness</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .essentials-table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #cc9999;
+            margin: 20px 0;
+            table-layout: fixed;
+        }
+        
+        .essentials-table th,
+        .essentials-table td {
+            border: 1px solid #996666;
+            padding: 12px 15px;
+            text-align: left;
+            vertical-align: top;
+            width: 25%;
+            word-wrap: break-word;
+            white-space: normal;
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+        
+        .essentials-table th {
+            background-color: #cc9999;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .essentials-table tbody tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .essentials-table tbody tr:hover {
+            background-color: #FFE4B5;
+        }
+        
+        /* Ensure all tables match width */
+        .guide-card .essentials-table {
+            width: 100%;
+            max-width: 100%;
+            table-layout: fixed;
+        }
+        
+        .guide-card {
+            width: 100%;
+        }
+        
+        /* Ensure consistent row heights across all tables */
+        .essentials-table td {
+            min-height: 60px;
+            height: auto;
+        }
+        
+        .essentials-table th {
+            min-height: 50px;
+            height: auto;
+        }
+        
+        /* Make guide grid tables full width */
+        .guide-grid {
+            display: block;
+            width: 100%;
+        }
+        
+        .guide-grid .guide-card {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        
+        .temp-guide,
+        .conversion-guide {
+            width: 100%;
+        }
+        
+        /* Center content */
+        .cooking-guides-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .cooking-guides-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #996666;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+            font-family: Georgia, serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Header with Site Name/Logo and Search Engine -->
+        <header>
+            <div class="header-content">
+                <!-- Site Name/Logo Area -->
+                <div class="logo-area">
+                    <h1><a href="index.html">Homemade Happiness</a></h1>
+                    <p class="tagline">Where Every Meal is Made with Love</p>
+                </div>
+                
+                <!-- Search Engine at Top Right -->
+                <div class="search-area">
+                    <form class="search-form" action="#" method="get">
+                        <input type="text" name="search" placeholder="Search recipes, tips, ingredients..." class="search-input" required>
+                        <button type="submit" class="search-btn" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes-mop.html">Recipes/MOP</a></li>
+                <li><a href="resources-faqs.html">Resources/FAQs</a></li>
+                <li><a href="cooking-guides.html" class="active">Cooking Guides</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Cooking Guides Section -->
+            <section class="cooking-guides-section">
+                <h2>Cooking Guides & References</h2>
+                
+                <div class="guide-grid">
+                    <div class="guide-card">
+                        <h4><i class="fas fa-thermometer-half"></i> Temperature Guide</h4>
+                        <div class="temp-guide">
+                            <h5>Meat Internal Temperatures:</h5>
+                            <table class="essentials-table">
+                                <thead>
+                                    <tr>
+                                        <th>Meat Type</th>
+                                        <th>Temperature (°F)</th>
+                                        <th>Temperature (°C)</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Chicken</td>
+                                        <td>165°F</td>
+                                        <td>74°C</td>
+                                        <td>Safe minimum temperature for all poultry</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ground beef</td>
+                                        <td>160°F</td>
+                                        <td>71°C</td>
+                                        <td>Well-done, safe for ground meats</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Beef steaks (medium-rare)</td>
+                                        <td>145°F</td>
+                                        <td>63°C</td>
+                                        <td>Warm red center, juicy and tender</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pork</td>
+                                        <td>145°F</td>
+                                        <td>63°C</td>
+                                        <td>Slightly pink center, safe and juicy</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fish</td>
+                                        <td>145°F</td>
+                                        <td>63°C</td>
+                                        <td>Flesh is opaque and flakes easily</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" style="background-color: #f8f9fa; font-style: italic; padding: 15px;">
+                                            <strong>General guidelines for determining doneness in meats, poultry, and fish.</strong> Chefs must rely not only on a thermometer, but also on their senses when cooking.<br><br>
+                                            <strong>• THE WAY IT SMELLS.</strong> As food is near doneness, their smells change. Aromas intensify and become easier to identify. Each cooking method produces a particular aroma. Grilled and broiled foods should have a pleasing, smoky, charred aroma, indicating rich, deep flavor.<br><br>
+                                            <strong>• THE WAY IT FEELS.</strong> Foods should be easy to cut and chew. Touch foods (with a gloved finger) to gauge resistance. The less well-done a piece of meat it, the softer and more yielding it will feel. Keep in mind that texture varies in different cuts of meat.<br><br>
+                                            <strong>• THE WAY IT LOOKS.</strong> As meat cooks, the exterior will change color. The interior colors also change, an important factor when determining doneness in meats cooked to customer (family) preference (rare, medium, or well done). If the meat appears pale or even gray, it has not been properly cooked. The juices that run from the meat, although minimal, should be the correct color; the rarer the meat, the redder the juices will appear. Appearance is also an important factor in knowing when to turn a piece of meat. When the meat's upper surface begins to appear very moist (there may even be moisture beads), the meat should be turned. Thin pieces may start to change color at the edges when they are ready for turning.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <h5>Cooking Temperatures:</h5>
+                            <table class="essentials-table">
+                                <thead>
+                                    <tr>
+                                        <th>Cooking Method</th>
+                                        <th>Temperature (°F)</th>
+                                        <th>Temperature (°C)</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Simmering</td>
+                                        <td>185-200°F</td>
+                                        <td>85-93°C</td>
+                                        <td>Gentle bubbles, ideal for delicate foods</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Boiling</td>
+                                        <td>212°F</td>
+                                        <td>100°C</td>
+                                        <td>Rolling bubbles, for pasta and vegetables</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Deep frying</td>
+                                        <td>350-375°F</td>
+                                        <td>175-190°C</td>
+                                        <td>Hot oil for crispy, golden results</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Candy making</td>
+                                        <td>300-320°F</td>
+                                        <td>150-160°C</td>
+                                        <td>Hard crack stage for brittle candy</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="guide-card">
+                        <h4><i class="fas fa-balance-scale"></i> Measurement Conversions</h4>
+                        <div class="conversion-guide">
+                            <h5>Volume Conversions:</h5>
+                            <table class="essentials-table">
+                                <thead>
+                                    <tr>
+                                        <th>From</th>
+                                        <th>Equals</th>
+                                        <th>Alternative</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1 cup</td>
+                                        <td>16 tablespoons</td>
+                                        <td>48 teaspoons</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 tablespoon</td>
+                                        <td>3 teaspoons</td>
+                                        <td>0.5 fluid ounces</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 cup</td>
+                                        <td>8 fluid ounces</td>
+                                        <td>240 milliliters</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 pint</td>
+                                        <td>2 cups</td>
+                                        <td>16 fluid ounces</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 quart</td>
+                                        <td>4 cups</td>
+                                        <td>32 fluid ounces</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 gallon</td>
+                                        <td>16 cups</td>
+                                        <td>4 quarts</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <h5>Weight Conversions:</h5>
+                            <table class="essentials-table">
+                                <thead>
+                                    <tr>
+                                        <th>From</th>
+                                        <th>Equals</th>
+                                        <th>Metric Equivalent</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1 pound</td>
+                                        <td>16 ounces</td>
+                                        <td>454 grams</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 ounce</td>
+                                        <td>28 grams</td>
+                                        <td>0.028 kilograms</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 kilogram</td>
+                                        <td>2.2 pounds</td>
+                                        <td>1000 grams</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 cup flour</td>
+                                        <td>~4.5 ounces</td>
+                                        <td>~125 grams</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="guide-card">
+                        <h4><i class="fas fa-exchange-alt"></i> Common Ingredient Substitutions</h4>
+                        <div class="substitution-grid">
+                            <h5>Baking Substitutions:</h5>
+                            <table class="essentials-table">
+                                <thead>
+                                    <tr>
+                                        <th>Original Ingredient</th>
+                                        <th>Substitute</th>
+                                        <th>Notes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1 cup butter</td>
+                                        <td>3/4 cup oil or 1 cup margarine</td>
+                                        <td>Oil makes softer texture</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 egg</td>
+                                        <td>1/4 cup applesauce or 1 tbsp ground flax + 3 tbsp water</td>
+                                        <td>For binding and moisture</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 cup milk</td>
+                                        <td>1 cup almond milk or 1/2 cup evaporated milk + 1/2 cup water</td>
+                                        <td>Non-dairy or concentrated options</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 cup sugar</td>
+                                        <td>3/4 cup honey (reduce liquid by 1/4 cup)</td>
+                                        <td>Natural sweetener, adjust liquids</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h5>Cooking Substitutions:</h5>
+                            <table class="essentials-table">
+                                <thead>
+                                    <tr>
+                                        <th>Original Ingredient</th>
+                                        <th>Substitute</th>
+                                        <th>Conversion Ratio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1 clove garlic</td>
+                                        <td>1/8 tsp garlic powder</td>
+                                        <td>Fresh to dried conversion</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 medium onion</td>
+                                        <td>1 tbsp onion powder</td>
+                                        <td>For convenience cooking</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 tbsp fresh herbs</td>
+                                        <td>1 tsp dried herbs</td>
+                                        <td>3:1 fresh to dried ratio</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 cup wine</td>
+                                        <td>1 cup broth + 1 tbsp vinegar</td>
+                                        <td>Alcohol-free alternative</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes-mop.html">Recipes/MOP</a></li>
+                        <li><a href="resources-faqs.html">Resources/FAQs</a></li>
+                        <li><a href="cooking-guides.html">Cooking Guides</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> hello@homemadehappiness.com</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-COOK</p>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-media">
+                        <a href="https://facebook.com/homemadehappiness" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/homemadehappiness" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://pinterest.com/homemadehappiness" target="_blank" aria-label="Pinterest">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                        <a href="https://youtube.com/homemadehappiness" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Homemade Happiness. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
